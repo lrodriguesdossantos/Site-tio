@@ -1,0 +1,157 @@
+
+
+/*
+@font-face{
+  font-family: 'Carattere';
+  src:url('fontes/Carattere-Regular.ttf') format('opentype');
+  font-weight: normal;
+}*/
+
+:root{
+  --branco:               #f8f5f0;
+  --dourado:              #b99e14;
+  --dourado-dessaturado:  #9c860f;
+  --preto:                #0c0101;
+
+  --font-roboto: arial, verdana, helvetica, sans-serif;
+  --font-carattere: 'Carattere', cursiva;
+ --font-famile: 'Roboto', sem serifa;
+
+ form img{
+  width: 100%;
+}
+
+
+header{
+
+ display:inline-flex;
+ align-items:center;
+
+
+}
+
+header img{
+flex-wrap: wrap;
+height: 100%;
+width: 100%; 
+
+ 
+}
+
+
+header ul{
+  padding: 0%;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  background: var(--branco);
+  font: var(--fonte-Carattere);
+  text-align: justify;
+  font: normal 16px arial, verdana,serif;
+}
+
+header h1{
+ color: var(--dourado);
+}
+
+header h3{
+ color: var(--dourado-dessaturado);
+}
+
+main{
+
+ display:inline-flex;
+
+}
+
+main img{
+ width: 100%;
+ height: 100%;
+}
+
+
+article{
+ display:inline-flex;
+ width: 100%;
+ 
+}
+
+article img{
+  height: 100%;
+  width: 100%;
+}
+
+
+article{
+  margin-left: auto;
+  height: 660px;
+  background-color:var(--branco);
+  color:var(--preto);
+  font: normal 16px arial, verdana,serif;
+
+} 
+
+#missao{
+  padding: 10px;
+  height: 360px;
+  width: 200px; 
+  text-align: justify;
+  flex-wrap: wrap;
+  }
+
+  #tintas{
+    padding: 10px;
+    height: 260px;
+    width: 200px; 
+    text-align: justify;
+    flex-wrap: wrap;
+    }
+
+
+
+article h1{
+ color:var(--dourado);
+}
+
+article h3{
+  color:var(--dourado);
+  text-align: center;
+ }
+
+aside{
+display: inline-flex;
+width: 100%; 
+
+}
+
+aside {
+    margin-left: auto;
+    height:660px;
+    background-color:var(--branco);
+    text-align: justify;
+    color:var(--pretor);
+    
+ }
+
+ aside image{
+  height: 100%;
+  width: 100%;
+ }
+
+aside h1{
+ color:var(--dourado);
+}
+
+aside h3{
+ color:var(--dourado-dessaturado);
+
+}
+
+aside ul{
+padding: 10px;
+list-style: none;
+text-align: center;
+font: normal 16px arial, verdana,serif;
+
+  
+}
