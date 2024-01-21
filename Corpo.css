@@ -148,10 +148,23 @@ aside h3{
 }
 
 aside ul{
-padding: 10px;
-list-style: none;
-text-align: center;
-font: normal 16px arial, verdana,serif;
-
+  padding: 10px;
+  width: 200px;
+  padding: 05px;
+  list-style: none;
+  text-align: center;
+  font: normal 16px arial, verdana,serif; 
+  }
   
-}
+  
+  @media only screen and (max-width: 500px ){
+ 
+    main{
+      display: block;
+    }
+ 
+  header{
+    display: block;
+  }
+    
+  }

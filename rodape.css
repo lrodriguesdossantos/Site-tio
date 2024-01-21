@@ -23,7 +23,15 @@ footer{
   flex-wrap: nowarp;
 }
 
+footer img{
+  margin: 10px;
+  height: 100%;
+  background-color: var(--branco);
+}
+
+
 #endereco{
+      display: inline;
       align-items: center; 
       color: var(--branco);
       margin: 10px;
@@ -68,11 +76,6 @@ margin: 03px;
       align-items: center;
     }
 
-footer img{
-  margin: 10px;
-  height: 100%;
-  background-color: var(--branco);
-}
 
 
 #midia{
@@ -123,4 +126,42 @@ transition: all 0.8s;
   height: 30%;
   width: 30%;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 1052px ){
+  
+  footer{
+    display:grid;
+    text-align: center;
+    width: 100%;
+    padding:10px;
+    grid-template-columns: repeat(2, 1fr);
+    gap:
+  }
+footer img{
+  text-align:center;
+}
+  #midia{
+    text-align:center;
+    width: 250px
+  }
+}
+@media screen and (max-width: 742px ){
+  
+  footer{
+    display:grid;
+    text-align: center;
+    width: 100%;
+    padding:10px;
+    margin:10px
+    grid-template-columns: repeat(1, 1fr);
+    gap:
+  }
+footer img{
+  text-align:center;
+}
+  #midia{
+  align-items: center;
+    width: 150px;
+  }
 }
