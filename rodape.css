@@ -15,48 +15,48 @@
 }
 
 footer{
+  justify-content: space-between;
   width: 100%;
   background-color: var(--preto);
-  justify-content: space-between;
   display: flex;
   align-items: center;
   flex-wrap: nowarp;
+  
 }
 
 footer img{
-  margin: 10px;
+  margin: 20px;
   height: 100%;
   background-color: var(--branco);
 }
 
-
 #endereco{
-      display: inline;
-      align-items: center; 
-      color: var(--branco);
-      margin: 10px;
-      padding: 10px;
-      list-style: none;
-      font: normal 16px arial, verdana,serif;
-}
-
-#local{
-  font-size: 2.40rem;
-  color: var(--vermelho);
-  
-}
-
-#contato{
-  color: var(--branco);
   margin: 10px;
-  padding: 10px;
+   align-items: center;
+  color: var(--branco);
+
   list-style: none;
-  text-align: justify;
   font: normal 16px arial, verdana,serif;
 }
 
+#local{
+ margin: 20px; 
+font-size: 3.40rem;
+color: var(--vermelho);
+
+}
+
+#contato{
+color: var(--branco);
+margin: 10px;
+list-style: none;
+text-align: justify;
+font: normal 16px arial, verdana,serif;
+}
+
 #deixe-contato{
- margin: 0px; 
+margin: 10px;
+display:grid;
 }
 
 #E-mail{
@@ -64,17 +64,17 @@ margin: 03px;
 }
 
 #Telefone{
-  margin: 03px;
-  }
+margin: 03px;
+}
 
-  #Texto{
-    margin: 03px;
-    padding: ;
-    }
+#Texto{
+margin: 03px;
+padding: ;
+}
 
-    #botao{
-      align-items: center;
-    }
+#botao{
+  align-items: center;
+}
 
 
 
@@ -82,86 +82,86 @@ margin: 03px;
 display: flex; 
 align-items: center; 
 padding: 0px;  
-margin: 0px;
+margin: 10px;
 font-size: 1.40rem;
 color: var(--branco);
 transition: all 0.8s;
 }
 
 #midia:hover{
-  opacity: 0.9;
+opacity: 0.9;
 }
 
 #instagram{
-  margin: 10px;
-  padding: 08px;
-  height: 30%;
-  width: 30%;
-  border-radius: 50%;
-  background-image: linear-gradient(var(--indigo), var(--vermelho), var(--amarelo));
+margin: 10px;
+padding: 08px;
+height: 30%;
+width: 30%;
+border-radius: 50%;
+background-image: linear-gradient(var(--indigo), var(--vermelho), var(--amarelo));
 
 }
 
 #facebook{
-  padding: 08px;
-  background-color: var(--azul);
-  height: 30%;
-  width: 30%;
-  border-radius: 50%;
+padding: 08px;
+background-color: var(--azul);
+height: 30%;
+width: 30%;
+border-radius: 50%;
 }
 
 #linkdin{
-  margin: 10px;
-  padding: 08px;
-  background-color: var(--azul);
-  height: 30%;
-  width: 30%;
-  border-radius: 50%;
+margin: 10px;
+padding: 08px;
+background-color: var(--azul);
+height: 30%;
+width: 30%;
+border-radius: 50%;
 }
 
 #whatsapp{
 
-  padding: 08px;
-  background-color: var(--verde);
-  height: 30%;
-  width: 30%;
-  border-radius: 50%;
+padding: 08px;
+background-color: var(--verde);
+height: 30%;
+width: 30%;
+border-radius: 50%;
 }
 
 @media screen and (max-width: 1052px ){
-  
-  footer{
-    display:grid;
-    text-align: center;
-    width: 100%;
-    padding:10px;
-    grid-template-columns: repeat(2, 1fr);
-    gap:
-  }
+
+footer{
+display:grid;
+text-align: center;
+width: 100%;
+padding:10px;
+grid-template-columns: repeat(2, 1fr);
+gap:
+}
 footer img{
-  text-align:center;
+text-align:center;
 }
-  #midia{
-    text-align:center;
-    width: 250px
-  }
+#midia{
+text-align:center;
+width: 250px
 }
-@media screen and (max-width: 742px ){
-  
-  footer{
-    display:grid;
-    text-align: center;
-    width: 100%;
-    padding:10px;
-    margin:10px
-    grid-template-columns: repeat(1, 1fr);
-    gap:
-  }
+}
+@media screen and (max-width: 442px ){
+
+footer{
+display:grid;
+text-align: center;
+width: 100%;
+padding:10px;
+margin:10px
+grid-template-columns: repeat(1, 1fr);
+gap:
+}
 footer img{
-  text-align:center;
+text-align:center;
 }
-  #midia{
-  align-items: center;
-    width: 150px;
-  }
+#midia{
+align-items: center;
+width: 150px;
+}
 }

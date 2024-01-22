@@ -156,6 +156,9 @@ aside ul{
   font: normal 16px arial, verdana,serif; 
   }
   
+  iframe{
+    width: 100%;
+  }
   
   @media only screen and (max-width: 500px ){
  
