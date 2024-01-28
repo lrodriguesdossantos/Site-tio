@@ -1,18 +1,6 @@
 
 
 
-:root{
-    --cinza:      #a8a29e; 
-    --branco:     #f5f5f5;
-    --preto:      #171717; 
-    --azul:       #3b5998; 
-    --indigo:     #7f37c9; 
-    --vermelho:   #ff2992; 
-    --amarelo:    #ff9807;
-    --verde:      #25D366;
-    --braco-opco: rgba(255, 255, 255, 0.418) ;
-    --font-roboto: 'Roboto', sans-serif;
-}
 
 footer{
   justify-content: space-between;

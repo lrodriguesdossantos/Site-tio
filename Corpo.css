@@ -1,21 +1,6 @@
 
 
-/*
-@font-face{
-  font-family: 'Carattere';
-  src:url('fontes/Carattere-Regular.ttf') format('opentype');
-  font-weight: normal;
-}*/
 
-:root{
-  --branco:               #f8f5f0;
-  --dourado:              #b99e14;
-  --dourado-dessaturado:  #9c860f;
-  --preto:                #0c0101;
-
-  --font-roboto: arial, verdana, helvetica, sans-serif;
-  --font-carattere: 'Carattere', cursiva;
- --font-famile: 'Roboto', sem serifa;
 
  form img{
   width: 100%;
@@ -36,26 +21,6 @@ height: 100%;
 width: 100%; 
 
  
-}
-
-
-header ul{
-  padding: 0%;
-  height: 100%;
-  width: 100%;
-  flex-wrap: wrap;
-  background: var(--branco);
-  font: var(--fonte-Carattere);
-  text-align: justify;
-  font: normal 16px arial, verdana,serif;
-}
-
-header h1{
- color: var(--dourado);
-}
-
-header h3{
- color: var(--dourado-dessaturado);
 }
 
 main{
@@ -143,7 +108,7 @@ aside h1{
 }
 
 aside h3{
- color:var(--dourado-dessaturado);
+ color:var(--dourado);
 
 }
 

@@ -1,23 +1,19 @@
 
 
 
-
 :root{
-
-    --vermelho:     red;
-    --laranja:      orange;
-    --amarelo:      yellow;
-    --verde:        green;
-    --Verde-Paris:  rgb(63, 245, 63);
-    --azul:         blue;
-    --indigo:       indigo;
-    --violeta:      violet;
-    --cinza:        gray;
-    --branco:       white;
-    --preto:        black;
-    --font-roboto: arial, verdana, helvetica, sans-serif;
+    --dourado:    #f0b914f8;
+    --cinza:      #d8d3d0dc; 
+    --branco:     #fffffffb;
+    --preto:      #171717; 
+    --azul:       #3b5998; 
+    --indigo:     #7f37c9; 
+    --vermelho:   #ff2992; 
+    --amarelo:    #ff9807;
+    --verde:      #25D366;
+    --braco-opco: rgba(206, 191, 191, 0.753) ;
+    --font-roboto: 'Roboto', sans-serif;
 }
-
 
 *{
     margin:0 auto;
@@ -25,24 +21,37 @@
   
 }
 
-
 nav{
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    flex-wrap: nowarp;
-    background-image:linear-gradient(to right, var(--vermelho),var(--laranja),var(--amarelo),var(--verde),var(--azul),var(--indigo),var(--violeta)) ;
+
+    display: inline-flex;
+    justify-content: space-between ;
+}
+
+nav img{
+    background-color: var(--branco);
    
 }
 
+nav img:hover{
+    background-color: var(--cinza);
+}
 
-nav li{
+
+menu{
+    display: flex;
+    align-items: center;
+
+    background-color: var(--branco);
+}
+
+menu li{
    display:inline-flex;
    padding: 20px; 
 }
 
-nav li a{
-
+menu li a{
+    flex-wrap: nowarp;
+    width: 100%;
     text-decoration: none;
     color: var(--preto);
     font-weight: bolder;
@@ -51,14 +60,57 @@ nav li a{
 }
 
 
-nav li:hover{
-    background: var(--Verde-Paris);
+
+menu li:hover{
+    background: var(--cinza);
     padding: 20px;
 }
 
-@media screen and (max-width: 540px){
-    nav{
-       display: block;
-    }
-       
-    }
+#iconi-menu{
+    display: none;
+}
+@media screen and (max-width: 650px ){
+
+    @media screen and (max-width: 442px ){
+
+    
+        nav{
+         margin: 0px;
+         padding: 0px;
+         display: block;
+         align-items:center;
+        }
+        
+         nav img{
+          text-align: center;
+          width: 100%;
+         }
+    
+         #iconi-menu{
+           margin: 10px;  
+           display: block;
+           font-size: 30px; 
+            text-align: center; 
+         }
+    
+      menu{
+          display: nane;
+          }
+      }
+        
+        menu{     
+         margin: 0px;
+         padding: 0px;
+         display: block;
+         align-items: center;
+         width: 100%;
+        }
+        
+        menu li{ 
+            display: none;
+            text-align: center;
+            background-color: var(--cinza);
+            border-top: 6px solid var(--branco);
+           }
+           
+          }
