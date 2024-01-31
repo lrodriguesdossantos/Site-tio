@@ -69,11 +69,9 @@ menu li:hover{
 #iconi-menu{
     display: none;
 }
+
 @media screen and (max-width: 650px ){
 
-    @media screen and (max-width: 442px ){
-
-    
         nav{
          margin: 0px;
          padding: 0px;
@@ -90,12 +88,13 @@ menu li:hover{
            margin: 10px;  
            display: block;
            font-size: 30px; 
-            text-align: center; 
+           text-align: center;
+           
          }
     
-      menu{
-          display: nane;
-          }
+         #MeNu {
+            display: none;
+            }
       }
         
         menu{     
@@ -107,10 +106,14 @@ menu li:hover{
         }
         
         menu li{ 
-            display: none;
+            display: grid;
             text-align: center;
             background-color: var(--cinza);
             border-top: 6px solid var(--branco);
            }
-           
-          }
+           menu li:hover{
+            background: var(--cinza);
+            padding: 20px;
+            cursor: pointer;    
+        }
+    }

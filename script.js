@@ -1,7 +1,7 @@
-a function clickMenu() {
-if (Menu.style.display == 'block'){
-    menu.style.display = 'none'
-}
-else{
-    menu.style.display = 'block'
+function menu(){
+  if (MeNu.style.display == 'block') {
+    MeNu.style.display = 'none' }
+    else{
+    MeNu.style.display = 'block' 
+  }
 }
