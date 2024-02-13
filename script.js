@@ -1,7 +1,19 @@
-function menu(){
-  if (MeNu.style.display == 'block') {
-    MeNu.style.display = 'none' }
+function Menu(){
+  if (menu.style.display == 'block') {
+    menu.style.display = 'none' }
     else{
-    MeNu.style.display = 'block' 
+    menu.style.display = 'block' 
   }
+}
+
+
+
+function Formulario(){
+ 
+    posicao.style.display = 'flex'
+
+}
+
+function fecha(){
+  posicao.style.display = 'none'
 }

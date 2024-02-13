@@ -1,0 +1,83 @@
+:root{
+    --transparente:    rgba(255, 255, 255, 0);
+    --preto:           black;
+    --branco:          white;
+    --vermelho:        red;
+    --verde:           green;
+    --azul:            blue;
+    --cinza:           gray;
+    --azul-celeste:    rgb(135, 206, 235);
+    --verde-claro:     #7fff00;
+ } 
+
+ 
+    
+ body{
+    height: 100vh;
+    background: var(--transparente);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#deixe-contato{
+ 
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+    height: 500px;
+    width: 300px;
+    max-width: 100%;
+    display: flex; 
+    flex-direction: column;
+    background-image: linear-gradient(var(--preto), var(--cinza), var(--azul));
+    
+  }
+ 
+  h1{
+    color: var(--branco);
+    font: normal 28px arial, verdana,serif;
+  }
+
+  #nome{
+    padding: 10px;
+    margin: 05px;
+    border-radius: 08px;
+    font-size: 15px
+  }
+
+  #email{
+    padding: 10px;
+    margin: 05px;
+    border-radius: 08px;
+    font-size: 15px
+  }
+
+  #telefone{
+    padding: 10px;
+    margin: 05px;
+    border-radius: 08px;
+    font-size: 15px
+  }
+
+  #mensagem{
+    padding: 10px;
+    margin: 05px;
+    border-radius: 08px;
+    min-height: 13rem;
+    font-size: 15px
+  }
+  
+
+  #botao{
+    align-items: center;
+    font-size: 20px;
+    font: normal 20px arial, verdana,serif;
+    font-weight: bolder;
+    border-radius: 10px;
+    border-color: var(--branco);
+    padding: 07px;
+    color: var(--preto);
+    background-color: var(--branco);
+  }
+  

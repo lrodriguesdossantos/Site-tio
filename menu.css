@@ -6,12 +6,13 @@
     --cinza:      #d8d3d0dc; 
     --branco:     #fffffffb;
     --preto:      #171717; 
-    --azul:       #3b5998; 
+    --azul:       #3b5998;
+    --azul-agua:  #00ffff;  
     --indigo:     #7f37c9; 
     --vermelho:   #ff2992; 
     --amarelo:    #ff9807;
     --verde:      #25D366;
-    --braco-opco: rgba(206, 191, 191, 0.753) ;
+    --brnaco-opco: rgba(206, 191, 191, 0.753) ;
     --font-roboto: 'Roboto', sans-serif;
 }
 
@@ -21,33 +22,32 @@
   
 }
 
+picture{
+    margin: 0px;
+}
 nav{
-
-    display: inline-flex;
-    justify-content: space-between ;
+    align-items: center;
+    display: flex;
+   justify-content: space-between;
 }
 
 nav img{
     background-color: var(--branco);
-   
+    margin: 0px
 }
 
-nav img:hover{
-    background-color: var(--cinza);
+  menu{
+    margin: 0px;
+  
 }
 
 
-menu{
-    display: flex;
-    align-items: center;
-
-    background-color: var(--branco);
-}
 
 menu li{
-   display:inline-flex;
-   padding: 20px; 
-}
+    display: inline-flex; 
+    padding: 20px; 
+    background-color: var(--cinza); 
+ }
 
 menu li a{
     flex-wrap: nowarp;
@@ -57,12 +57,13 @@ menu li a{
     font-weight: bolder;
     font-family: var(--font-roboto);
     font-size: 20px;
+   
 }
 
 
 
 menu li:hover{
-    background: var(--cinza);
+    background: var(--branco);
     padding: 20px;
 }
 
@@ -70,50 +71,42 @@ menu li:hover{
     display: none;
 }
 
-@media screen and (max-width: 650px ){
+@media only screen and (max-width: 680px){
 
-        nav{
-         margin: 0px;
-         padding: 0px;
-         display: block;
-         align-items:center;
-        }
-        
-         nav img{
-          text-align: center;
-          width: 100%;
-         }
-    
-         #iconi-menu{
-           margin: 10px;  
-           display: block;
-           font-size: 30px; 
-           text-align: center;
-           
-         }
-    
-         #MeNu {
-            display: none;
-            }
-      }
-        
-        menu{     
-         margin: 0px;
-         padding: 0px;
-         display: block;
-         align-items: center;
-         width: 100%;
-        }
-        
-        menu li{ 
-            display: grid;
-            text-align: center;
-            background-color: var(--cinza);
-            border-top: 6px solid var(--branco);
-           }
-           menu li:hover{
-            background: var(--cinza);
-            padding: 20px;
-            cursor: pointer;    
-        }
+    nav{
+        display:block;
+       text-align: center;
     }
+
+    nav img{
+     width: 100%;
+    }
+    
+    #iconi-menu{
+        display: block;
+        font-size: 35px;
+    }
+
+    menu{
+        display: none;
+    }
+    menu{     
+        margin: 0px;
+        padding: 0px;
+        align-items: center;
+        width: 100%;
+       }
+       
+       menu li{ 
+           display: grid;
+           text-align: center;
+           background-color: var(--cinza);
+           border-top: 6px solid var(--branco);
+          }
+          menu li:hover{
+           background: var(--cinza);
+           padding: 20px;
+           cursor: pointer;    
+       }
+   
+}
