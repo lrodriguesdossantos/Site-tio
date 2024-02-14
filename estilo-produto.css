@@ -1,0 +1,73 @@
+
+:root{
+  --dourado:    #f0b914f8;
+  --cinza:      #d8d3d0dc; 
+  --branco:     #fffffffb;
+  --preto:      #171717; 
+  --azul:       #3b5998;
+  --azul-agua:  #00ffff;  
+  --indigo:     #7f37c9; 
+  --vermelho:   #ff2992; 
+  --amarelo:    #ff9807;
+  --verde:      #25D366;
+  --brnaco-opco: rgba(206, 191, 191, 0.753) ;
+  --font-roboto: 'Roboto', sans-serif;
+}
+
+body{
+  max-width: 1378px;
+  padding: 20px;
+  display: flex;
+  flex-direction:column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header{
+  display:inline-flex;
+  justify-items: center;
+  margin: 0px;
+  padding: 10px;
+  margin-left:auto;
+  margin-right: auto;
+  
+}
+header img{
+  width: 100%;
+  height: 100%;
+}
+
+
+h1{
+  color: var(--dourado);
+  padding: 10px;
+  margin: 0px
+  font: normal 50px arial, verdana, serif;
+}
+
+aside{
+  display:inline-flex;
+  background-color: var(--cinza);
+}
+
+aside img{
+  width: 100%;
+  height: 100%;
+}
+
+ h3{
+ color:var(--dourado);
+
+}
+
+
+#Produto ul{
+  padding: 10px;
+  width: 200px;
+  padding: 05px;
+  list-style: none;
+  text-align: center;
+  font: normal 18px arial, verdana,serif; 
+  }
+
+  
