@@ -1,17 +1,10 @@
 
+
 :root{
   --dourado:    #f0b914f8;
   --cinza:      #d8d3d0dc; 
   --branco:     #fffffffb;
-  --preto:      #171717; 
-  --azul:       #3b5998;
-  --azul-agua:  #00ffff;  
-  --indigo:     #7f37c9; 
-  --vermelho:   #ff2992; 
-  --amarelo:    #ff9807;
-  --verde:      #25D366;
-  --brnaco-opco: rgba(206, 191, 191, 0.753) ;
-  --font-roboto: 'Roboto', sans-serif;
+  
 }
 
 *{
@@ -20,8 +13,7 @@
  margin-right: auto;
 
 body{ 
-   display: block;
-   text-align:center;
+
    background-color: var(--cinza);
 }
 
@@ -31,11 +23,21 @@ header{
 }
 
 main{
-  display: inline-flex;
-  justify-items: center;
+width: 100%; 
+display:inline-flex ;
+justify-items: center; 
+
  
+ 
+ }
+
+div{
+ margin: 0px;
+ width: 0%;
 }
 
+
+ 
 article{
   text-align: justify;
   margin-bottom: 10px;
@@ -46,7 +48,8 @@ article{
 }
 
  h1{
-  display: inline-flex;
+margin-left: auto;
+margin-right: auto;  
  color: var(--dourado);
  font: normal 40px solid arial, verdana,serif;
 }
@@ -54,5 +57,5 @@ article{
  h2{
  color: var(--dourado);
  font: normal  arial, verdana,serif;
-  text-align: center;
+  text-align: center
 }

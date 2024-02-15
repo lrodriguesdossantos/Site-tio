@@ -23,27 +23,16 @@ body{
   margin-right: auto;
 }
 
-header{
-  display:inline-flex;
-  justify-items: center;
-  margin: 0px;
-  padding: 10px;
-  margin-left:auto;
-  margin-right: auto;
-  
-}
-header img{
-  width: 100%;
-  height: 100%;
-}
+
 
 
 h1{
+  width: 100%;
   color: var(--dourado);
-  padding: 10px;
-  margin: 0px
+  text-align: center;
   font: normal 50px arial, verdana, serif;
 }
+
 
 aside{
   display:inline-flex;

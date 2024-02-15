@@ -4,15 +4,7 @@
   --cinza:      #d8d3d0dc; 
   --branco:     #fffffffb;
   --preto:      #171717; 
-  --azul:       #3b5998;
-  --azul-agua:  #00ffff;  
-  --indigo:     #7f37c9; 
-  --vermelho:   #ff2992; 
-  --amarelo:    #ff9807;
-  --verde:      #25D366;
-  --brnaco-opco: rgba(206, 191, 191, 0.753) ;
-  --font-roboto: 'Roboto', sans-serif;
-}
+  -}
 
 body{
   max-width: 1378px;
@@ -40,9 +32,9 @@ header img{
 
 h1{
   color: var(--dourado);
-  padding: 10px;
-  margin: 0px
   font: normal 50px arial, verdana, serif;
+  margin-left: auto;
+  margin-right:auto; 
 }
 
 aside{
@@ -67,7 +59,7 @@ aside img{
   padding: 05px;
   list-style: none;
   text-align: center;
-  font: normal 18px arial, verdana,serif; 
+  font: normal 17px arial, verdana,serif; 
   }
 
   
