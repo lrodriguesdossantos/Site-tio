@@ -8,7 +8,8 @@
    <link rel="stylesheet" href="menu.css">
    <link rel="stylesheet" href="Corpo.css">
    <link rel="stylesheet" href="rodape.css">
-   <script src="script.js"></script>
+   <script src="script-fechar-abri.js"></script>
+   <script src="script-envio-form.js"></script>
    
 
 </head>
@@ -94,14 +95,15 @@ Técnico: fmoura@globalprinti.com.br
 
    <div id="posicao">
 
-      <form id="deixe-contato">
-         <div id="posicao-fechar"><button id="fechar"onclick="fecha()">X</button></div>
+      <form action="https://formsubmit.co/ajax/lrodriguesdossantos@hotmail.com" method="post" data-form>
+         
+         <div id="posicao-fechar"><button id="fechar">X</button></div>
          <h1>Deixe seu contato</h1>
          <input id="nome" type="text" name="name" placeholder="Nome" autocomplete="additional-name"required>
          <input id="email" type="email" name="email" placeholder="E-mail" autocomplete="email"required>
          <input id="telefone" type="tel" name="Telefone" placeholder="Telefone" autocomplete="tel"required>
          <textarea id="mensagem" type="text" name="subject" placeholder="Descrição" minlength="20"></textarea> 
-         <button type="submit" id="enviar">Enviar</button>  
+         <button type="submit" id="enviar" data-enviar>Enviar</button>  
       </form>
    </div>
    

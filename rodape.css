@@ -133,17 +133,38 @@ opacity: 0.9;
     z-index: 2000;
   }
 
-  #deixe-contato{
-    margin: 0px;
+  form{
+    margin: 10px;
     display: flex;
     flex-direction: column;
     align-content: center;
-    height: 520px;
+    height: 640px;
     width: 320px;
-    padding: 20px; 
-    background-image: linear-gradient(var(--preto), var(--cinza), var(--azul));
+    padding: 30px; 
+    background-image: linear-gradient(var(--preto), var(--cinza), var(--pretoclaro), var(--azul));
      
    }
+
+   input,
+   textarea {
+  margin-bottom: 1rem ;
+  color:var(--branco);
+  background-color: var(--preto-claro);
+  transition: border-color 0.3s box-shadow 0.3s;
+   }
+
+   input:hover,
+   input:focus,
+  textarea:hover,
+  textarea:focus{
+    outline: none;
+    border-color: var(--azul);
+    box-shadow: 0 0 0 0.3125rem var(--pretoclaro);
+  }
+
+  textarea{
+
+  }
    
    #posicao-fechar{
     margin: 0px;
@@ -154,20 +175,6 @@ opacity: 0.9;
 
    }
    
-   #fechar{
-    height: 30px;
-    width:  30px;
-    font-size: 15px;
-    padding: 0px;
-    margin: 0px;
-    border-radius: 50%;
-    color: var(--branco);
-    background-color: Var(--preto);
-    border: 2px solid  snow;
-    box-shadow: 0 0 10 10px black;
-    cursor: pointer;
-  
-  }
 
 
 h1{
@@ -201,21 +208,50 @@ padding: 10px;
 margin: 08px;
 border-radius: 08px;
 min-height: 13rem;
-font-size: 15px
+font-size: 15px;
+resize: vertical;
 }
 
 
-#enviar{
-align-items: center;
-font-size: 20px;
-font: normal 20px arial, verdana,serif;
-font-weight: bolder;
-border-radius: 10px;
-border-color: var(--branco);
-padding: 07px;
-color: var(--preto);
-background-color: var(--branco);
-cursor: pointer;
+button{
+  width: 150px;
+  align-items: center;
+  font-size: 20px;
+  font: normal 20px arial, verdana,serif;
+  font-weight: bolder;
+  border-radius: 10px;
+  border-color: var(--branco);
+  padding: 07px;
+  color: var(--branco);
+  background-color: var(--azul);
+  cursor: pointer;
+  transition: 0.3s;
+  }
+
+  button:hover,
+  button:focus{
+    outline: none;
+    background-color: var(--azulclaro);
+  }
+
+  button: :disabled{
+    cursor: not-allowed;
+    background: var(--cinza);
+  }
+
+#fechar{
+  height: 30px;
+  width:  30px;
+  font-size: 15px;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 50%;
+  color: var(--branco);
+  background-color: Var(--preto);
+  border: 2px solid  snow;
+  box-shadow: 0 0 10 10px black;
+  cursor: pointer;
+
 }
 
 

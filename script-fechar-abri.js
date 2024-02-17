@@ -14,6 +14,6 @@ function Formulario(){
 
 }
 
-function fecha(){
+function fechar(){
   posicao.style.display = 'none'
 }
