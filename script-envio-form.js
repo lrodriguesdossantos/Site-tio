@@ -13,7 +13,7 @@ class FormSubmit{
 
 
     displaySuccess(){
-        this.podi.innerHTML = this.settings.success;
+        this.formen.innerHTML = this.settings.success;
     }
 
     displayError(){
@@ -32,11 +32,14 @@ class FormSubmit{
     onSubmission(event){
         event.preventDefault();
         event.target.disabled = true;
-        event.target.innerText ="Enviando";
+        event.target.innerText = "Enviando";  
     }
+
+   if
 
     async sendForm(event) {
         try{
+            this.onSubmission(event);
        await fetch(this.url,{
            method: "POST",
            headers: {
@@ -60,11 +63,11 @@ class FormSubmit{
     }
 }
 
-const formSubmit = new FormSubmit ({
+const FormSubmit = new FormSubmit({
     form: "[data-form]",
     enviar: "[data-button]",
-    success: "<h1 class='success'>Mensagem enviada</h1>",
-    error: "<h1 class='error'>Não foi possivel enviar sua mensagem.</h1>",
+    Success: "<h1 class='success'>Mensagem enviada!</h1>",
+    Error: "<h1 class='erro'>Não foi possivel enviar sua mensagem.</h1>",
 });
 
 

@@ -62,4 +62,16 @@ aside img{
   font: normal 17px arial, verdana,serif; 
   }
 
-  
+  @media only screen and (max-width: 540px){
+
+    aside{
+      width: 100%;
+        display:flex;
+       flex-direction: column;
+       align-items: center;
+    }
+
+
+aside img{
+     width: 100%;
+    }

@@ -67,11 +67,9 @@
     CEP 06728-120-Cotia-SP
    
 </div>
- 
 <div id="contato">
   
 Telefone: (11) 91694-6215<br/>
-Vendas: vsouza@globalprinti.com.br <br>
 Vendas internas:	vendas@globalprinti.com.br<br>
 Financeiro: financeiro@globalprinti.com.br<br> 
 Técnico: fmoura@globalprinti.com.br 
@@ -94,16 +92,18 @@ Técnico: fmoura@globalprinti.com.br
 <span>
 
    <div id="posicao">
+      
 
       <form action="https://formsubmit.co/ajax/lrodriguesdossantos@hotmail.com" method="post" data-form>
-         
-         <div id="posicao-fechar"><button id="fechar">X</button></div>
+         <div id="posicao-fechar"><button id="Fechar" onclick="fechar()">X</button></div>
+       
          <h1>Deixe seu contato</h1>
          <input id="nome" type="text" name="name" placeholder="Nome" autocomplete="additional-name"required>
          <input id="email" type="email" name="email" placeholder="E-mail" autocomplete="email"required>
          <input id="telefone" type="tel" name="Telefone" placeholder="Telefone" autocomplete="tel"required>
-         <textarea id="mensagem" type="text" name="subject" placeholder="Descrição" minlength="20"></textarea> 
-         <button type="submit" id="enviar" data-enviar>Enviar</button>  
+         <input type="hidden" name="_autoresponse" value="Obrigado por seu contato, assim que possivel retornaremos.">
+         <textarea id="mensagem" type="text" name="subject" placeholder="Descrição" minlength="10"></textarea> 
+         <button type="submit" id="enviar" data-button>Enviar</button>  
       </form>
    </div>
    

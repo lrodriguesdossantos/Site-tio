@@ -213,8 +213,8 @@ resize: vertical;
 }
 
 
-button{
-  width: 150px;
+#enviar{
+  width: 160px;
   align-items: center;
   font-size: 20px;
   font: normal 20px arial, verdana,serif;
@@ -228,20 +228,30 @@ button{
   transition: 0.3s;
   }
 
-  button:hover,
-  button:focus{
+  #enviar:hover,
+  #enviar:focus{
     outline: none;
     background-color: var(--azulclaro);
   }
 
-  button: :disabled{
+
+  
+
+  #enviar:disabled{
     cursor: not-allowed;
     background: var(--cinza);
   }
 
-#fechar{
-  height: 30px;
-  width:  30px;
+  #Fechar:hover,
+  #Fechar:focus{
+    outline: none;
+    background-color: var(--pretoclaro);
+  }
+
+
+#Fechar{
+  height: 35px;
+  width:  35px;
   font-size: 15px;
   padding: 0px;
   margin: 0px;
