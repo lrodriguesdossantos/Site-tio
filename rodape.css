@@ -53,6 +53,7 @@ font: normal 15px arial, verdana,serif;
   font-size: 1.40rem;
   color: var(--branco);
   transition: all 0.8s;
+  cursor: pointer;
   }
 
   #midia{
@@ -106,7 +107,6 @@ opacity: 0.9;
     height: 10%;
     width: 10%;
     border-radius: 50%;
-    cursor: pointer;
     }
    
   span{
@@ -213,7 +213,7 @@ resize: vertical;
 }
 
 
-#enviar{
+.enviar{
   width: 160px;
   align-items: center;
   font-size: 20px;
@@ -228,8 +228,8 @@ resize: vertical;
   transition: 0.3s;
   }
 
-  #enviar:hover,
-  #enviar:focus{
+  .enviar:hover,
+  .enviar:focus{
     outline: none;
     background-color: var(--azulclaro);
   }
@@ -237,7 +237,7 @@ resize: vertical;
 
   
 
-  #enviar:disabled{
+  .enviar:disabled{
     cursor: not-allowed;
     background: var(--cinza);
   }

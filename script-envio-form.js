@@ -2,7 +2,7 @@ class FormSubmit{
     constructor(settings){
         this.settings = settings;
         this.form = document.querySelector(settings.form);
-        this.formenviar = document.querySelector(settings.enviar);
+        this.formbutton= document.querySelector(settings.enviar);
 
         if(this.form){
             this.url = this.form.getAttribute("action");     
@@ -13,7 +13,7 @@ class FormSubmit{
 
 
     displaySuccess(){
-        this.formen.innerHTML = this.settings.success;
+        this.form.innerHTML = this.settings.success;
     }
 
     displayError(){
@@ -23,7 +23,7 @@ class FormSubmit{
     getFormObject() {
         const formObject = {};
         const fields = this.form.querySelectorAll("[name]");
-        fields.forEach((field)=>{
+        fields.forEach((field) => {
             formObject[field.getAttribute("name")] = field.value;
         });
         return formObject;
@@ -32,7 +32,7 @@ class FormSubmit{
     onSubmission(event){
         event.preventDefault();
         event.target.disabled = true;
-        event.target.innerText = "Enviando";  
+        event.target.innerText = 'Enviando....';  
     }
 
    if
@@ -57,13 +57,13 @@ class FormSubmit{
 
 
     init(){
-        if (this.form) this.formenviar.addEventListener("click", this.sendForm);
+        if (this.form) this.formSubmit.addEventListener("click", this.sendForm);
         
         return this;
     }
 }
 
-const FormSubmit = new FormSubmit({
+const formSubmit = new FormSubmit({
     form: "[data-form]",
     enviar: "[data-button]",
     Success: "<h1 class='success'>Mensagem enviada!</h1>",
