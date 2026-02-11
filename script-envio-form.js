@@ -27,39 +27,35 @@ class FormSubmit {
         return formObject;
     }
 
-    async sendForm(event) {
-        event.preventDefault();
+   async sendForm(event) {
+    event.preventDefault();
 
-        try {
-            await fetch(this.url, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    Accept: "application/json",
-                },
-                body: JSON.stringify(this.getFormObject()),
-            });
+    try {
+        const response = await fetch(this.url, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+            },
+            body: JSON.stringify(this.getFormObject()),
+        });
 
-            // Redireciona após sucesso
-            window.location.href = "index.html"; // coloque sua página aqui
+        const data = await response.json();
 
-        } catch (error) {
+        if (data.success === "true" || data.success === true) {
+            // Redireciona para a página desejada
+            window.location.href = "index.html"; // coloque aqui sua página
+        } else {
             this.displayError();
         }
-    }
 
-    init() {
-        if (this.form) {
-            this.form.addEventListener("submit", this.sendForm);
-        }
-        return this;
+    } catch (error) {
+        this.displayError();
     }
 }
-
-const formSubmit = new FormSubmit({
-    form: "[data-form]",
-    success: "<h1 class='success'>Mensagem enviada!</h1>",
-    error: "<h1 class='erro'>Não foi possível enviar sua mensagem.</h1>",
-});
-
-formSubmit.init();
+    if (data.success === "true" || data.success === true) {
+    this.displaySuccess();
+    setTimeout(() => {
+        window.location.href = "index.html";
+    }, 2000);
+}
