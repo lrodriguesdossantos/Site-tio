@@ -41,21 +41,14 @@ class FormSubmit {
         });
 
         const data = await response.json();
-
-        if (data.success === "true" || data.success === true) {
-            // Redireciona para a página desejada
-            window.location.href = "index.html"; // coloque aqui sua página
-        } else {
-            this.displayError();
-        }
-
-    } catch (error) {
-        this.displayError();
-    }
-}
-    if (data.success === "true" || data.success === true) {
+   if (data.success === "true" || data.success === true) {
     this.displaySuccess();
     setTimeout(() => {
         window.location.href = "index.html";
     }, 2000);
+       }
+       catch (error) {
+        this.displayError();
+    }
 }
+ 
